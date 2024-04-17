@@ -1,6 +1,6 @@
 import Combine
-//import DependencyContainer
-
+import DependencyContainer
+import Logger
 public struct Router {
     /**
             An object containing all the `Route` underlying implementations associated to a `RouteDefinition` type.

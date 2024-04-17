@@ -1,4 +1,5 @@
 import Foundation
+import Logger
 
 public struct Endpoint {
     public enum AuthorizationType: Equatable {

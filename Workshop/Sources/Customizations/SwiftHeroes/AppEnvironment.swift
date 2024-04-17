@@ -11,7 +11,7 @@ struct AppEnvironment {
     static let shared = AppEnvironment()
     
     var baseURL: URL {
-          .init(string: "https://swiftheroes.com/swiftheroes-2024/schedule/v/1.0/widgets/schedule.json") ?? .init(filePath: "")
+          .init(string: "https://swiftheroes.com/swiftheroes-2024/schedule/v/1.0/widgets/schedule.json")!
       }
 //    var baseURL2: URL {
 //          .init(string: "https://flutterheroes.com/flutter-heroes-2024/schedule/v/0.8/widget/v2.json") ?? .init(filePath: "")

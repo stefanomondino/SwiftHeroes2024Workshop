@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Networking
 
 protocol TalkRepository {
     func talks() async throws -> [Talk]

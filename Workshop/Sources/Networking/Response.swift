@@ -1,4 +1,5 @@
 import Foundation
+import Logger
 
 public struct Response {
     struct InternalError: Swift.Error {}

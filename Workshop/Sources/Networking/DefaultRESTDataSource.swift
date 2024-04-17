@@ -1,4 +1,5 @@
 import Foundation
+import Logger
 
 extension Logger.Level {
     static var network: Self = .init(20)

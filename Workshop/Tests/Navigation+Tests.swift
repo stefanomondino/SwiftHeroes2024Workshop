@@ -130,12 +130,20 @@ extension XCTestCase {
     }
 }
 
-public func assertEqual(_ route: RouteDefinition,
-                        _ otherRoute: RouteDefinition,
-                        file: StaticString = #file,
-                        line: UInt = #line) {
-    guard route.isSameRoute(as: otherRoute) else {
-        XCTFail("Route \(route) is not equal to \(otherRoute)", file: file, line: line)
+public func assertEqual(
+    _ route: RouteDefinition,
+    _ otherRoute: RouteDefinition,
+    file: StaticString = #file,
+    line: UInt = #line
+) {
+    guard route.isSameRoute(
+        as: otherRoute
+    ) else {
+        XCTFail(
+            "Route \(route) is not equal to \(otherRoute)",
+            file: file,
+            line: line
+        )
         return
     }
 }
